@@ -71,6 +71,54 @@
 	</script>
 
 
+	<script>
+	function loadXMLDoc() {
+	  var xmlhttp = new XMLHttpRequest();
+	  xmlhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	      myFunction(this);
+	    }
+	  };
+	  xmlhttp.open("GET", "db.xml", true);
+	  xmlhttp.send();
+	}
+	function myFunction(xml) {
+	  var i;
+	  var xmlDoc = xml.responseXML;
+	  var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>More Info</th></tr>";
+	  var locations="";
+	  var x = xmlDoc.getElementsByTagName("db");
+	  for (i = 0; i <x.length; i++) { 
+	    table += "<tr><td>" +
+	    x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+	    "</td><td>" +
+	    x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+	    "</td><td>"+
+	    x[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
+	    "</td><td onmouseover=show("+
+	    i +
+	    ") onmouseout=hide("+
+	    i +
+	    ")>[Hover Over]</td></tr>";
+	    
+	    test += "<div id=" +
+	    i +
+	    "><p>" +
+	    x[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
+	    "</p><img src="+
+	    x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue +
+	    "></img></div>";
+	    
+	  }
+	  document.getElementById("demo").innerHTML = table;
+	  document.getElementById("locations").innerHTML = locations;
+	}
+	</script>
+
+
+
+
+
 	<style type="text/css">
 		
 		input[type=text] {
@@ -139,7 +187,7 @@
 		<input type="text" id="SearchBar" onkeyup="find()" placeholder="Search for items">
 			
 		<div id="table">
-			<table id="db">
+<!--			<table id="db">
 				<tr>
 					<th>Name</th>
 					<th>Id</th>
@@ -233,12 +281,12 @@
 				</tr>
 
 
-
+-->
 			</table>
 
 			
 			<div id="locations">
-
+<!--
 				<div id="1">
 					<p>The Electric Guitar (001) is located in the 3rd door, it is broken.</p>
 				</div>
@@ -286,7 +334,7 @@
 				<div id="12">
 					<p>The Katana (012) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</p>
 				</div>
-
+-->
 			</div>
 
 		</div>
@@ -296,7 +344,8 @@
 </div>
 
 	<script>
-		$("#locations").children().hide()
+		loadXMLDoc();
+		$("#locations").children().hide();
 	</script>
 
 </body>

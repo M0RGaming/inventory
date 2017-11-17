@@ -3,6 +3,14 @@
 		<name>Guitar</name>
 		<id>001</id>
 		<availability>Available</availability>
-		<picture>img/old.png</picture>
+		<info>The Electric Guitar (001) is located in the 3rd door, it is broken.</info>
+		<picture>img/001.png</picture>
+	</object>
+	<object>
+		<name>Canvas bag</name>
+		<id>002</id>
+		<availability>Available</availability>
+		<info>The Canvas Bag (002) is located in the 3rd door, it holds swords.</info>
+		<picture>img/002.png</picture>
 	</object>
 </db>
