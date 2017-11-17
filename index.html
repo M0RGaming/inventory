@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lillian Osborne Props Inventory</title>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="js/smoothscroll.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		function show(id) {
+			$("#" + id).show()
+		}
+		function hide(id) {
+			$("#" + id).hide()
+		}
+
+	</script>
+
+
+	<script>
+		function find() {
+		  // Declare variables 
+		  var input, filter, table, tr, td, i;
+		  input = document.getElementById("SearchBar");
+		  filter = input.value.toUpperCase();
+		  table = document.getElementById("db");
+		  tr = table.getElementsByTagName("tr");
+
+		  // Loop through all table rows, and hide those who don't match the search query
+		  for (i = 0; i < tr.length; i++) {
+		    td = tr[i].getElementsByTagName("td")[0];
+		    if (td) {
+		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		      } else {
+		        tr[i].style.display = "none";
+		      }
+		    } 
+		  }
+		}
+	</script>
+
+
+	<style type="text/css">
+		
+		input[type=text] {
+		    width: 15%;
+	    	-webkit-transition: width 0.4s ease-in-out;
+	    	transition: width 0.4s ease-in-out;
+		}
+
+		/* When the input field gets focus, change its width to 100% */
+		input[type=text]:focus {
+	 	   width: 95%;
+		}
+
+
+		#SearchBar {
+		    background-image: url('/img/searchicon.png'); /* Add a search icon to input */
+		    background-position: 10px 12px; /* Position the search icon */
+		    background-repeat: no-repeat; /* Do not repeat the icon image */
+		/*    width: 100%; Full-width */
+		    font-size: 16px; /* Increase font-size */
+		    padding: 12px 20px 12px 40px; /* Add some padding */
+		    border: 1px solid #ddd; /* Add a grey border */
+		    margin-bottom: 12px; /* Add some space below the input */
+		}
+
+		#db {
+		    border-collapse: collapse; /* Collapse borders */
+		    width: 100%; /* Full-width */
+		    border: 1px solid #ddd; /* Add a grey border */
+		    font-size: 18px; /* Increase font-size */
+		}
+
+		#db th, #db td {
+		    text-align: left; /* Left-align text */
+		    padding: 15px; /* Add padding */
+		    border: 1px solid #ddd;
+		}
+
+		#db tr {
+		    /* Add a bottom border to all table rows */
+		    border-bottom: 1px solid #ddd; 
+		}
+
+		#db tr.header, #db tr:hover {
+		    /* Add a grey background color to the table header and on hover */
+		    background-color: #f1f1f1;
+		}
+	</style>
+
+
+</head>
+<body>
+
+<div id="root">
+	
+	<div id="part1">
+
+		<input type="text" id="SearchBar" onkeyup="find()" placeholder="Search for items">
+			
+		<div id="table">
+			<table id="db">
+				<tr>
+					<th>Name</th>
+					<th>Id</th>
+					<th>Location and Picture</th>
+				</tr>
+
+				<tr>
+					<td>Sword</td>
+					<td>001</td>
+					<td onmouseover="show(1)" onmouseout="hide(1)">[Hover Over]</td>
+<!--						<p id="location001">[Hover Over]</p>
+					</td> -->
+				</tr>
+
+				<tr>
+					<td>Crossbow</td>
+					<td>002</td>
+					<td onmouseover="show(2)" onmouseout="hide(2)">[Hover Over]</td>
+<!--						<p id="location002">[Hover Over]</p>
+					</td> -->
+				</tr>
+
+				<tr>
+					<td>USS Enterprise</td>
+					<td>003</td>
+					<td onmouseover="show(3)" onmouseout="hide(3)">[Hover Over]</td>
+<!--						<p id="location003">[Hover Over]</p>
+					</td> -->
+				</tr>
+
+				<tr>
+					<td>Glass Jar</td>
+					<td>004</td>
+					<td onmouseover="show(4)" onmouseout="hide(4)">[Hover Over]</td>
+<!--						<p id="location004">[Hover Over]</p>
+					</td> -->
+				</tr>
+
+			</table>
+
+			
+			<div id="locations">
+
+				<div id="1">
+					<p>The Broadsword (001) is in the 1st closet from the door, in the top shelf</p>
+				</div>
+
+				<div id="2">
+					<p>The Crossbow (002) is in the 1st closet from the door, in the bottom shelf</p>
+				</div>
+
+				<div id="3">
+					<p>The Model USS Enterprise (003) is in the 7th closet from the door, in the top shelf</p>
+				</div>
+
+				<div id="4">
+					<p>The Glass Jar (004) is in the fifth closet from the door, in the middle shelf</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+	<script>
+		$("#locations").children().hide()
+	</script>
+
+</body>
+</html>
