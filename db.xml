@@ -1,0 +1,8 @@
+<db>
+	<object>
+		<name>Guitar</name>
+		<id>001</id>
+		<availability>Available</availability>
+		<picture>img/old.png</picture>
+	</object>
+</db>
