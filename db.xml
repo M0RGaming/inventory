@@ -13,4 +13,11 @@
 		<info>The Canvas Bag (002) is located in the 3rd door, it holds swords.</info>
 		<picture>img/002.png</picture>
 	</object>
+	<object>
+		<name>Cutlas</name>
+		<id>003</id>
+		<availability>Available</availability>
+		<info></info>
+		<picture>img/003.png</picture>
+	</object>
 </db>
