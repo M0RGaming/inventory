@@ -148,9 +148,9 @@
       n +
       "><p>" +
       x[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
-      "</p><img src="+
-      x[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue +
-      "></img></div>";
+      "</p><img src=img/"+
+      x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+      ".png></img></div>";
       
     }
     document.getElementById("list").innerHTML = table;
