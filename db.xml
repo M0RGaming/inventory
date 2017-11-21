@@ -1,241 +1,252 @@
 <db>
-	<object>
-		<name>Guitar</name>
-		<id>001</id>
-		<availability>Available</availability>
-		<info>The Electric Guitar (001) is located in the 3rd door, it is broken.</info>
-	</object>
 
-	<object>
-		<name>Canvas bag</name>
-		<id>002</id>
-		<availability>Available</availability>
-		<info>The Canvas Bag (002) is located in the 3rd door, it holds swords.</info>
-	</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>003</id>
-		<availability>Available</availability>
-		<info>The Cutlass (003) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+	
+	<door3>
+		<object>
+			<name>Guitar</name>
+			<id>001</id>
+			<availability>Available</availability>
+			<info>The Electric Guitar (001) is located in the 3rd door, it is broken.</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>004</id>
-		<availability>Available</availability>
-		<info>The Cutlass (004) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Canvas bag</name>
+			<id>002</id>
+			<availability>Available</availability>
+			<info>The Canvas Bag (002) is located in the 3rd door, it holds swords.</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>005</id>
-		<availability>Available</availability>
-		<info>The Cutlass (005) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>003</id>
+			<availability>Available</availability>
+			<info>The Cutlass (003) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>006</id>
-		<availability>Available</availability>
-		<info>The Cutlass (006) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>004</id>
+			<availability>Available</availability>
+			<info>The Cutlass (004) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>007</id>
-		<availability>Available</availability>
-		<info>The Cutlass (007) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>005</id>
+			<availability>Available</availability>
+			<info>The Cutlass (005) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>008</id>
-		<availability>Available</availability>
-		<info>The Cutlass (008) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>006</id>
+			<availability>Available</availability>
+			<info>The Cutlass (006) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Cutlas</name>
-		<id>009</id>
-		<availability>Available</availability>
-		<info>The Cutlass (009) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>007</id>
+			<availability>Available</availability>
+			<info>The Cutlass (007) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Katana</name>
-		<id>010</id>
-		<availability>Available</availability>
-		<info>The Katana (010) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>008</id>
+			<availability>Available</availability>
+			<info>The Cutlass (008) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Katana</name>
-		<id>011</id>
-		<availability>Available</availability>
-		<info>The Katana (011) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
-	</object>
+		<object>
+			<name>Cutlas</name>
+			<id>009</id>
+			<availability>Available</availability>
+			<info>The Cutlass (009) is located in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		</object>
 
-	<object>
-		<name>Katana</name>
-		<id>012</id>
-		<availability>Available</availability>
-		<info>The Katana (012) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
-	</object>
+		<object>
+			<name>Katana</name>
+			<id>010</id>
+			<availability>Available</availability>
+			<info>The Katana (010) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
+		</object>
 
-	<object>
-		<name>Knife</name>
-		<id>013</id>
-		<availability>Available</availability>
-		<info>The Knife (013) is located in the 3rd door, it is... well a knife.</info>
-	</object>
+		<object>
+			<name>Katana</name>
+			<id>011</id>
+			<availability>Available</availability>
+			<info>The Katana (011) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
+		</object>
 
-	<object>
-		<name>Knife</name>
-		<id>014</id>
-		<availability>Available</availability>
-		<info>The Knife (014) is located in the 3rd door, it is... well a knife.</info>
-	</object>
+		<object>
+			<name>Katana</name>
+			<id>012</id>
+			<availability>Available</availability>
+			<info>The Katana (012) is located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
+		</object>
 
-	<object>
-		<name>Knife</name>
-		<id>015</id>
-		<availability>Available</availability>
-		<info>The Knife (015) is located in the 3rd door, it is... well a knife.</info>
-	</object>
+		<object>
+			<name>Knife</name>
+			<id>013</id>
+			<availability>Available</availability>
+			<info>The Knife (013) is located in the 3rd door, it is... well a knife.</info>
+		</object>
 
-	<object>
-		<name>Knife</name>
-		<id>016</id>
-		<availability>Available</availability>
-		<info>The Knife (016) is located in the 3rd door, it is... well a knife.</info>
-	</object>
+		<object>
+			<name>Knife</name>
+			<id>014</id>
+			<availability>Available</availability>
+			<info>The Knife (014) is located in the 3rd door, it is... well a knife.</info>
+		</object>
 
-	<object>
-		<name>Knife</name>
-		<id>017</id>
-		<availability>Available</availability>
-		<info>The Knife (017) is located in the 3rd door, it is... well a knife.</info>
-	</object>
+		<object>
+			<name>Knife</name>
+			<id>015</id>
+			<availability>Available</availability>
+			<info>The Knife (015) is located in the 3rd door, it is... well a knife.</info>
+		</object>
 
-	<object>
-		<name>Knife Sheath</name>
-		<id>018</id>
-		<availability>Available</availability>
-		<info>The Knife Sheath (018) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
-	</object>
+		<object>
+			<name>Knife</name>
+			<id>016</id>
+			<availability>Available</availability>
+			<info>The Knife (016) is located in the 3rd door, it is... well a knife.</info>
+		</object>
 
-	<object>
-		<name>Knife Sheath</name>
-		<id>019</id>
-		<availability>Available</availability>
-		<info>The Knife Sheath (019) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
-	</object>
+		<object>
+			<name>Knife</name>
+			<id>017</id>
+			<availability>Available</availability>
+			<info>The Knife (017) is located in the 3rd door, it is... well a knife.</info>
+		</object>
 
-	<object>
-		<name>Knife Sheath</name>
-		<id>020</id>
-		<availability>Available</availability>
-		<info>The Knife Sheath (020) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
-	</object>
+		<object>
+			<name>Knife Sheath</name>
+			<id>018</id>
+			<availability>Available</availability>
+			<info>The Knife Sheath (018) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
+		</object>
 
-	<object>
-		<name>Katana Sheath</name>
-		<id>021</id>
-		<availability>Available</availability>
-		<info>The Katana Sheath (021) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the katana.</info>
-	</object>
+		<object>
+			<name>Knife Sheath</name>
+			<id>019</id>
+			<availability>Available</availability>
+			<info>The Knife Sheath (019) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
+		</object>
 
-	<object>
-		<name>Katana Sheath</name>
-		<id>022</id>
-		<availability>Available</availability>
-		<info>The Katana Sheath (022) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the katana.</info>
-	</object>
+		<object>
+			<name>Knife Sheath</name>
+			<id>020</id>
+			<availability>Available</availability>
+			<info>The Knife Sheath (020) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
+		</object>
 
-	<object>
-		<name>Giant Axe</name>
-		<id>023</id>
-		<availability>Available</availability>
-		<info>The Giant Axe (023) is located in the 3rd door, it is... well its a giant axe (not to be mistaken for the non-existant small axe)</info>
-	</object>
+		<object>
+			<name>Katana Sheath</name>
+			<id>021</id>
+			<availability>Available</availability>
+			<info>The Katana Sheath (021) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the katana.</info>
+		</object>
 
-	<object>
-		<name>Bloody Sword</name>
-		<id>024</id>
-		<availability>Available</availability>
-		<info>The Bloody Sword (024) is located in the 3rd door, it is an sword that looks bloody.</info>
-	</object>
+		<object>
+			<name>Katana Sheath</name>
+			<id>022</id>
+			<availability>Available</availability>
+			<info>The Katana Sheath (022) is located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the katana.</info>
+		</object>
 
-	<object>
-		<name>Realistic Sword</name>
-		<id>025</id>
-		<availability>Available</availability>
-		<info>The Realistic Sword (025) is located in the 3rd door, it is a sword that looks more realistic then the others.</info>
-	</object>
+		<object>
+			<name>Giant Axe</name>
+			<id>023</id>
+			<availability>Available</availability>
+			<info>The Giant Axe (023) is located in the 3rd door, it is... well its a giant axe (not to be mistaken for the non-existant small axe)</info>
+		</object>
 
-	<object>
-		<name>Wooden Sword</name>
-		<id>026</id>
-		<availability>Available</availability>
-		<info>The Wooden Sword (026) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
-	</object>
+		<object>
+			<name>Bloody Sword</name>
+			<id>024</id>
+			<availability>Available</availability>
+			<info>The Bloody Sword (024) is located in the 3rd door, it is an sword that looks bloody.</info>
+		</object>
 
-	<object>
-		<name>Wooden Sword</name>
-		<id>027</id>
-		<availability>Available</availability>
-		<info>The Wooden Sword (027) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
-	</object>
+		<object>
+			<name>Realistic Sword</name>
+			<id>025</id>
+			<availability>Available</availability>
+			<info>The Realistic Sword (025) is located in the 3rd door, it is a sword that looks more realistic then the others.</info>
+		</object>
 
-	<object>
-		<name>Wooden Sword</name>
-		<id>028</id>
-		<availability>Available</availability>
-		<info>The Wooden Sword (028) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
-	</object>
+		<object>
+			<name>Wooden Sword</name>
+			<id>026</id>
+			<availability>Available</availability>
+			<info>The Wooden Sword (026) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		</object>
 
-	<object>
-		<name>Wooden Sword</name>
-		<id>029</id>
-		<availability>Available</availability>
-		<info>The Wooden Sword (029) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
-	</object>
+		<object>
+			<name>Wooden Sword</name>
+			<id>027</id>
+			<availability>Available</availability>
+			<info>The Wooden Sword (027) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		</object>
 
-	<object>
-		<name>Wooden Sword</name>
-		<id>030</id>
-		<availability>Available</availability>
-		<info>The Wooden Sword (030) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
-	</object>
+		<object>
+			<name>Wooden Sword</name>
+			<id>028</id>
+			<availability>Available</availability>
+			<info>The Wooden Sword (028) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		</object>
 
-	<object>
-		<name>Thor Hammer</name>
-		<id>031</id>
-		<availability>Available</availability>
-		<info>The Thor Hammer (031) is located in the 3rd door, it is a hammer that only the (Norse) god of lightning, Thor, is worthy of weilding.</info>
-	</object>
+		<object>
+			<name>Wooden Sword</name>
+			<id>029</id>
+			<availability>Available</availability>
+			<info>The Wooden Sword (029) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		</object>
 
-	<object>
-		<name>Dowel</name>
-		<id>032</id>
-		<availability>Available</availability>
-		<info>The Dowel (032) is located in the 3rd door, it is a wooden cylinder used mostly in construction (like the class not like building construction), it is 8 inches tall</info>
-	</object>
+		<object>
+			<name>Wooden Sword</name>
+			<id>030</id>
+			<availability>Available</availability>
+			<info>The Wooden Sword (030) is located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		</object>
 
-	<object>
-		<name>Dowel</name>
-		<id>033</id>
-		<availability>Available</availability>
-		<info>The Dowel (033) is located in the 3rd door, it is a wooden cylinder used mostly in construction (like the class not like building construction), it is 52 inches tall</info>
-	</object>
+		<object>
+			<name>Thor Hammer</name>
+			<id>031</id>
+			<availability>Available</availability>
+			<info>The Thor Hammer (031) is located in the 3rd door, it is a hammer that only the (Norse) god of lightning, Thor, is worthy of weilding.</info>
+		</object>
 
-	<object>
-		<name>Book of Carols</name>
-		<id>034</id>
-		<availability>Available</availability>
-		<info>The Book of Carols (034) is located in the 3rd door, it is a tall, but not thick, book that contains a bunch of carols.</info>
-	</object>
+		<object>
+			<name>Dowel</name>
+			<id>032</id>
+			<availability>Available</availability>
+			<info>The Dowel (032) is located in the 3rd door, it is a wooden cylinder used mostly in construction (like the class not like building construction), it is 8 inches tall</info>
+		</object>
+
+		<object>
+			<name>Dowel</name>
+			<id>033</id>
+			<availability>Available</availability>
+			<info>The Dowel (033) is located in the 3rd door, it is a wooden cylinder used mostly in construction (like the class not like building construction), it is 52 inches tall</info>
+		</object>
+
+		<object>
+			<name>Book of Carols</name>
+			<id>034</id>
+			<availability>Available</availability>
+			<info>The Book of Carols (034) is located in the 3rd door, it is a tall, but not thick, book that contains a bunch of carols.</info>
+		</object>
+	</door3>
+
+
+
+	<door4>
+
+	</door4>
 <!--
 	<object>
 		<name></name>

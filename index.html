@@ -126,15 +126,26 @@
     var xmlDoc = xml.responseXML;
     var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>Info</th></tr>";
     var info="";
-    var x = xmlDoc.getElementsByTagName("object");
+    var x = xmlDoc.getElementsByTagName("door3");
     for (i = 0; i <x.length; i++) { 
 
       var n = i+1
 
+      if(n < 10) {
+        String spacing = "00"
+      } else if (n < 100) {
+        String spacing = "0"
+      } else if (n<1000) {
+        String spacing = undefined
+      };
+
+
+
       table += "<tr><td>" +
       x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
       "</td><td>" +
-      x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+      spacing +
+      n +
       "</td><td>"+
       x[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
       "</td><td onmouseover=show("+
@@ -149,7 +160,8 @@
       "><p>" +
       x[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
       "</p><img src=img/"+
-      x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+      spacing +
+      n +
       ".png></img></div>";
       
     }
