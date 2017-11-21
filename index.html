@@ -123,31 +123,33 @@
   }
   function myFunction(xml) {
     var i;
+    var spacing = "";
     var xmlDoc = xml.responseXML;
     var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>Info</th></tr>";
     var info="";
-    var x = xmlDoc.getElementsByTagName("door3");
+    var x = xmlDoc.getElementsByTagName("object");
+    var y = xmlDoc.getElementsByTagName("door3");
     for (i = 0; i <x.length; i++) { 
 
       var n = i+1
 
       if(n < 10) {
-        String spacing = "00"
+        var spacing = "00"
       } else if (n < 100) {
-        String spacing = "0"
+        var spacing = "0"
       } else if (n<1000) {
-        String spacing = undefined
+        var spacing = undefined
       };
 
 
 
       table += "<tr><td>" +
-      x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+      y[x[i]].getElementsByTagName("name")[0].childNodes[0].nodeValue +
       "</td><td>" +
       spacing +
       n +
       "</td><td>"+
-      x[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
+      y[x[i]].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
       "</td><td onmouseover=show("+
       n +
       ") onmouseout=hide("+
@@ -158,7 +160,7 @@
       info += "<div id=" +
       n +
       "><p>" +
-      x[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
+      y[x[i]].getElementsByTagName("info")[0].childNodes[0].nodeValue +
       "</p><img src=img/"+
       spacing +
       n +
