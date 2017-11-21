@@ -211,6 +211,12 @@
 
 
 	<door4>
+		
+		<object>
+			<name>TestThing</name>
+			<availability>Available</availability>
+			<info>Test</info>
+		</object>
 
 	</door4>
 <!--

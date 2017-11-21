@@ -128,8 +128,16 @@
     var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>Info</th></tr>";
     var info="";
     var x = xmlDoc.getElementsByTagName("object");
-    var y = xmlDoc.getElementsByTagName("door3");
-    for (i = 0; i <x.length; i++) { 
+    var d3 = xmlDoc.getElementsByTagName("door3");
+    var d4 = xmlDoc.getElementsByTagName("door4");
+
+
+    fill(d3, x, spacing, xmlDoc, table, info, i);
+    fill(d4, x, spacing, xmlDoc, table, info, i);
+
+
+
+/*    for (i = 0; i <x.length; i++) { 
 
       var n = i+1
 
@@ -141,15 +149,15 @@
         var spacing = undefined
       };
 
-
+      z = y[0].getElementsByTagName("object")
 
       table += "<tr><td>" +
-      y[x[i]].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+      z[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
       "</td><td>" +
       spacing +
       n +
       "</td><td>"+
-      y[x[i]].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
+      z[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
       "</td><td onmouseover=show("+
       n +
       ") onmouseout=hide("+
@@ -160,18 +168,61 @@
       info += "<div id=" +
       n +
       "><p>" +
-      y[x[i]].getElementsByTagName("info")[0].childNodes[0].nodeValue +
+      z[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
       "</p><img src=img/"+
       spacing +
       n +
       ".png></img></div>";
-      
-    }
+      }
+*/
     document.getElementById("list").innerHTML = table;
     document.getElementById("locations").innerHTML = info;
     $("#locations").children().hide();
   }
+
+  function fill(y, x, spacing, xmlDoc, table, info, i) {
+    for (i = 0; i <x.length; i++) { 
+
+    var n = i+1
+
+    if(n < 10) {
+      var spacing = "00"
+    } else if (n < 100) {
+      var spacing = "0"
+    } else if (n<1000) {
+      var spacing = undefined
+    };
+
+    z = y[0].getElementsByTagName("object")
+
+    table += "<tr><td>" +
+    z[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    spacing +
+    n +
+    "</td><td>"+
+    z[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
+    "</td><td onmouseover=show("+
+    n +
+    ") onmouseout=hide("+
+    n +
+    ")>[Hover Over]</td</tr>";
+    
+
+    info += "<div id=" +
+    n +
+    "><p>" +
+    z[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
+    "</p><img src=img/"+
+    spacing +
+    n +
+    ".png></img></div>";
+      
+    }
+  }
   </script>
+
+
 
 
 
