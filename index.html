@@ -115,29 +115,23 @@
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
+        myFunction(this, "door3");
+        myFunction(this, "door4");
       }
     };
     xmlhttp.open("GET", "https://m0rgaming.github.io/inventory/db.xml", true);
     xmlhttp.send();
   }
-  function myFunction(xml) {
+  function myFunction(xml, door) {
     var i;
     var spacing = "";
     var xmlDoc = xml.responseXML;
     var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>Info</th></tr>";
     var info="";
     var x = xmlDoc.getElementsByTagName("object");
-    var d3 = xmlDoc.getElementsByTagName("door3");
-    var d4 = xmlDoc.getElementsByTagName("door4");
+    var y = xmlDoc.getElementsByTagName(door);
 
-
-    fill(d3, x, spacing, xmlDoc, table, info, i);
-    fill(d4, x, spacing, xmlDoc, table, info, i);
-
-
-
-/*    for (i = 0; i <x.length; i++) { 
+    for (i = 0; i <x.length; i++) { 
 
       var n = i+1
 
@@ -145,7 +139,7 @@
         var spacing = "00"
       } else if (n < 100) {
         var spacing = "0"
-      } else if (n<1000) {
+      } else if (n < 1000) {
         var spacing = undefined
       };
 
@@ -174,52 +168,12 @@
       n +
       ".png></img></div>";
       }
-*/
+
     document.getElementById("list").innerHTML = table;
     document.getElementById("locations").innerHTML = info;
     $("#locations").children().hide();
   }
 
-  function fill(y, x, spacing, xmlDoc, table, info, i) {
-    for (i = 0; i <x.length; i++) { 
-
-    var n = i+1
-
-    if(n < 10) {
-      var spacing = "00"
-    } else if (n < 100) {
-      var spacing = "0"
-    } else if (n<1000) {
-      var spacing = undefined
-    };
-
-    z = y[0].getElementsByTagName("object")
-
-    table += "<tr><td>" +
-    z[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    spacing +
-    n +
-    "</td><td>"+
-    z[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
-    "</td><td onmouseover=show("+
-    n +
-    ") onmouseout=hide("+
-    n +
-    ")>[Hover Over]</td</tr>";
-    
-
-    info += "<div id=" +
-    n +
-    "><p>" +
-    z[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
-    "</p><img src=img/"+
-    spacing +
-    n +
-    ".png></img></div>";
-      
-    }
-  }
   </script>
 
 
