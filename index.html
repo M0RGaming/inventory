@@ -115,21 +115,22 @@
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        myFunction(this, "door3");
-        myFunction(this, "door4");
+        myFunction(this);
       }
     };
-    xmlhttp.open("GET", "https://m0rgaming.github.io/inventory/db.xml", true);
+    xmlhttp.open("GET", "https://m0rgaming.github.io/inventory/door3.xml", true);
     xmlhttp.send();
   }
-  function myFunction(xml, door) {
+
+
+  function myFunction(xml) {
     var i;
     var spacing = "";
     var xmlDoc = xml.responseXML;
-    var table="<tr><th>Name</th><th>Id</th><th>Availability</th><th>Info</th></tr>";
+    var table="<tr><th>Name</th><th>Amount</th><th>Availability</th><th>Info</th></tr>";
     var info="";
     var x = xmlDoc.getElementsByTagName("object");
-    var y = xmlDoc.getElementsByTagName(door);
+//    var y = xmlDoc.getElementsByTagName(door);
 
     for (i = 0; i <x.length; i++) { 
 
@@ -143,15 +144,14 @@
         var spacing = undefined
       };
 
-      z = y[0].getElementsByTagName("object")
+//      z = y[0].getElementsByTagName("object")
 
       table += "<tr><td>" +
-      z[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+      x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
       "</td><td>" +
-      spacing +
-      n +
+      x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue +
       "</td><td>"+
-      z[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
+      x[i].getElementsByTagName("availability")[0].childNodes[0].nodeValue +
       "</td><td onmouseover=show("+
       n +
       ") onmouseout=hide("+
@@ -162,7 +162,7 @@
       info += "<div id=" +
       n +
       "><p>" +
-      z[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
+      x[i].getElementsByTagName("info")[0].childNodes[0].nodeValue +
       "</p><img src=img/"+
       spacing +
       n +

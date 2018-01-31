@@ -1,0 +1,110 @@
+<db>
+
+	<object>
+		<name>Guitar</name>
+		<availability>1/1</availability>
+		<info>The Electric Guitar(s) is/are located in the 3rd door, it is broken.</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Canvas bag</name>
+		<availability>1/1</availability>
+		<info>The Canvas Bag(s) is/are located in the 3rd door, it holds swords.</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Cutlas</name>
+		<availability>7/7</availability>
+		<info>The Cutlas' arelocated in the 3rd door, its a small curved sword (used by pirates/sailors).</info>
+		<amount>7</amount>
+	</object>
+
+	<object>
+		<name>Katana</name>
+		<availability>3/3</availability>
+		<info>The Katanas are located in the 3rd door, it is an arm length curved sword, typically used in Japan.</info>
+		<amount>3</amount>
+	</object>
+
+	<object>
+		<name>Knife</name>
+		<availability>5/5</availability>
+		<info>The Knives are located in the 3rd door, it is... well a knife.</info>
+		<amount>5</amount>
+	</object>
+
+	<object>
+		<name>Knife Sheath</name>
+		<availability>3/3</availability>
+		<info>The Knife Sheaths are located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the knife.</info>
+		<amount>3</amount>
+	</object>
+
+	<object>
+		<name>Katana Sheath</name>
+		<availability>2/2</availability>
+		<info>The Katana Sheaths are located in the 3rd door, it is a peice of plastic (may be a different material) that covers the blade of the katana.</info>
+		<amount>2</amount>
+	</object>
+
+	<object>
+		<name>Giant Axe</name>
+		<availability>1/1</availability>
+		<info>The Giant Axe(s) is/are located in the 3rd door, it is... well its a giant axe (not to be mistaken for the non-existant small axe)</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Bloody Sword</name>
+		<availability>1/1</availability>
+		<info>The Bloody Sword(s) is/are located in the 3rd door, it is an sword that looks bloody.</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Realistic Sword</name>
+		<availability>1/1</availability>
+		<info>The Realistic Sword(s) is/are located in the 3rd door, it is a sword that looks more realistic then the others.</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Wooden Sword</name>
+		<availability>5/5</availability>
+		<info>The Wooden Swords are located in the 3rd door, it is a... well its a sword made out of wood.</info>
+		<amount>5</amount>
+	</object>
+
+	<object>
+		<name>Thor Hammer</name>
+		<availability>1/1</availability>
+		<info>The Thor Hammer(s) is located in the 3rd door, it is a hammer that the (Norse) god of lightning, Thor, weilds in stories.</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Dowel</name>
+		<availability>1/1</availability>
+		<info>The Dowels are located in the 3rd door, they are wooden cylinders used mostly in construction (like the class not like building construction), they are 8 inches and 52 inches tall</info>
+		<amount>1</amount>
+	</object>
+
+	<object>
+		<name>Book of Carols</name>
+		<availability>1/1</availability>
+		<info>The Book of Carols is located in the 3rd door, it is a tall, but not thick, book that contains a bunch of carols.</info>
+		<amount>1</amount>
+	</object>
+
+
+<!--
+	<object>
+		<name>NAME</name>
+		<availability>AMT/AMT</availability>
+		<info>The NAME is located in the 3rd door,</info>
+		<amount>AMT</amount>
+	</object>
+-->
+</db>
